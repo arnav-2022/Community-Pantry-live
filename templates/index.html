@@ -1,42 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-    <script>
-        // When the user clicks on <div>, open the popup
-        var popupbox = document.createElement("div");
-        var food_name = document.createElement("p");
-        var quantity = document.createElement("p");
-        var description = document.createElement("p");
-        var form_location = document.createElement("p");
-        var contact_number = document.createElement("p");
-        var close_popup_button = document.createElement("button");
-        popupbox.appendChild(food_name);
-        popupbox.appendChild(quantity);
-        popupbox.appendChild(description);
-        popupbox.appendChild(form_location);
-        popupbox.appendChild(contact_number);
-        popupbox.appendChild(close_popup_button);
-        close_popup_button.setAttribute('onclick', 'close_popup()');
-        close_popup_button.innerHTML = "close";
-        close_popup_button.id = "close_popup_button";
-        function popup() {
-          popupbox.className = "popupbox center";
-          popupbox.style.visibility = "visible";
-          food_name.innerHTML = "12345678901234567890123456789012345678901234567890";
-          quantity.innerHTML = "12345678901234567890123456789012345678901234567890";
-          description.innerHTML = "12345678901234567890123456789012345678901234567890";
-          form_location.innerHTML = "12345678901234567890123456789012345678901234567890";
-          contact_number.innerHTML = "12345678901234567890123456789012345678901234567890";
-          document.body.appendChild(popupbox);
-        }
-        function close_popup(){
-            popupbox.style.visibility = "hidden";
-        }
-    </script>
-    <link rel='stylesheet' href= 'website.css'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Rescue</title>
+    <title>Community Pantry</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,14 +31,9 @@
         <h1>Community Pantry</h1>
         <h2>Welcome to our community pantry project!</h2>
         <p>Click below to add a food item to the pantry</p>
-        <p><a href="add_food.html">Add Food Item</a></p>
+        <p><a href="/add">Add Food Item</a></p>
         <p>Or click here to view available food items:</p>
-        <p><a href="available_food.html">View Available Food</a></p>
+        <p><a href="/availableFood">View Available Food</a></p>
     </div>
-    <span id="popuplocation"></span>
-    
-    <div class="popup" onclick="popup()">Click me!</div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
