@@ -78,11 +78,11 @@
             <tbody>
                 {% for food_item in food_items %}
                 <tr>
-                    <td>{{ food_item.name }}</td>
-                    <td>{{ food_item.quantity }}</td>
-                    <td>{{ food_item.description }}</td>
-                    <td>{{ food_item.pickup_address }}</td>
-                    <td>{{ food_item.contact_number }}</td>
+                    <td>{{ food_item[0] }}</td>
+                    <td>{{ food_item[1] }}</td>
+                    <td>{{ food_item[2] }}</td>
+                    <td>{{ food_item[3] }}</td>
+                    <td>{{ food_item[4] }}</td>                    
                 </tr>
                 {% endfor %}
             </tbody>
