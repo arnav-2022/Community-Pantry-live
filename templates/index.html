@@ -3,37 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Pantry</title>
+    <title>Community-Pantry- Live</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        h1, h2 {
+        .header {
+            background-color: #dbd5d5;
+            color: rgb(234, 46, 46);
+            padding: 5px;
             text-align: center;
+            font-size:40px;
+            width: 80%; /* Adjust the value to specify the width of the header */
+            margin: 0 auto;
         }
-        p {
+        .subheading {
             text-align: center;
             margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .left-container,
+        .right-container {
+            flex-basis: 48%;
+            padding: 20px;
+            background-color: beige;
+            /* border: 1px solid #ccc; */
+            /* border-radius: 5px; */
+        }
+        
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            width: 45%; /* Adjust width to fit buttons */
+            margin: 5px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .left-container .description-paragraph{
+            font-size: 20px; /* Set font size */
+            color: #030303; /* Set font color */
+            font-weight: bold; /* Set font weight */
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            font-style: italic;
+            margin-bottom: 150px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Community Pantry</h1>
+    </div>
+    <div class="subheading">
         <h2>Welcome to our community pantry project!</h2>
-        <p>Click below to add a food item to the pantry</p>
-        <p><a href="/add">Add Food Item</a></p>
-        <p>Or click here to view available food items:</p>
-        <p><a href="/availableFood">View Available Food</a></p>
+    </div>
+    <div class="main-content">
+        <div class="left-container">
+            <h3 class="description-heading"></h3>
+            <p class="description-paragraph">Welcome to Community Pantry, where kindness knows no bounds. Whether you're sharing your abundance or seeking a helping hand, our platform is your compassionate ally. Easily add surplus food items, knowing your contribution makes a meaningful difference. And for those seeking support, explore our offerings with comfort and assurance, knowing a caring community awaits with open arms.</p>
+            <div class="button-container">
+                <a href="/add" class="button">Add Food Item</a>
+                <a href="/availableFood" class="button">View Food</a>
+
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='meal_pic1.jpg') }}" class="image" ?
+            </div>
+        </div>
     </div>
 </body>
 </html>

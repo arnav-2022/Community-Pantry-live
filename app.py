@@ -30,7 +30,7 @@ def add_food():
   
         # Insert the data into the database
         db = get_db()
-        db.execute('INSERT INTO Pantry (FoodName, Quantity, Description, PickupAddress,ContactNumber) VALUES (?, ?, ?, ?, ?)', (food_name, quantity, description, pickup_address, contact_number))
+        db.execute('INSERT INTO Pantry (FoodName, Quantity, Description, PickupAddress, ContactNumber) VALUES (?, ?, ?, ?, ?)', (food_name, quantity, description, pickup_address, contact_number))
         db.commit()
         db.close()
         
