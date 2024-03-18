@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function popup() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+    </script>
+    <link rel='stylesheet' href= 'website.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Rescue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Community Pantry</h1>
+        <h2>Welcome to our community pantry project!</h2>
+        <p>Click below to add a food item to the pantry</p>
+        <p><a href="C:\Users\Chrissy\Documents\add_food.html">Add Food Item</a></p>
+        <p>Or click here to view available food items:</p>
+        <p><a href="C:\Users\Chrissy\Documents\available_food.html">View Available Food</a></p>
+    </div>
+    <div class="popup">Click me!
+        <span class="popuptext" id="myPopup">12345678901234567890123456789012345678901234567890</span>
+    </div>
+</body>
+</html>

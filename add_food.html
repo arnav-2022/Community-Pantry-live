@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href= 'website.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food Item</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Food Item</h1>
+        <form action="C:\Users\Chrissy\Documents\add_food.html" method="post">
+            <label for="food_name">Food Name:</label>
+            <input type="text" id="food_name" name="food name" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <label for="pickup_address">Pickup Address:</label>
+            <textarea id="pickup_address" name="pickup address" required></textarea>
+            <label for="contact_number">Contact Number:</label>
+            <input type="tel" id="contact_number" name="contact_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input type="submit" value="Add Food">  
+        </form>
+    </div>
+</body>
+</html>
