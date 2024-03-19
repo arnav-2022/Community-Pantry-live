@@ -35,6 +35,7 @@ compared to static websites.
 - Enhance the user interface for a more intuitive experience.
 - Explore options for scalability and wider community impact.
 # Setup
+- Python 3.x should be installed (https://www.python.org/downloads/)
 ### Project structure
 ![tree_structure](static/project_tree.PNG)
 
@@ -42,9 +43,10 @@ Use the line of code below to download Pizza Casa:
 ```
 $ git clone https://github.com/ChrissyAFK/Community-Pantry-live.git
 ```
-  Navigate to  project directory 
+  In command prompt, navigate to  project directory and install dependencies.
 ```
 $ cd Community-Pantry-live
+$ pip install -r requirements.txt
 ```
 Create a database and table to store records. For this, run follwing command.
 ```
