@@ -48,7 +48,7 @@ $ cd Community-Pantry-live
 ```
 Create a database and table to store records. For this, run follwing command.
 ```
-$ python database_create.py
+$ python pantry_database_and_table_create.py
 ```
 Now execute the app 
 ```
