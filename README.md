@@ -36,22 +36,7 @@ compared to static websites.
 - Explore options for scalability and wider community impact.
 # Setup
 ### Project structure
-Community-pantry-live.
-│   app.py
-│   database_create.py
-│   schema.sql
-│   README.md
-│   requirements.txt
-│       
-├───static
-│       meal_pic1.jpg
-│       
-└───templates
-        add_food.html
-        available_food.html
-        index.html
-        meal_pic.jpg
-        requirements.txt
+![tree_structure](static/project_tree.PNG)
 
 Use the line of code below to download Pizza Casa:
 ```
