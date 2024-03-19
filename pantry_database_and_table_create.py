@@ -1,6 +1,6 @@
 import sqlite3
 
-DATABASE = 'community_pantry'
+DATABASE = 'community_pantry.db'
 
 
 # Connect to the SQLite database (create it if it doesn't exist)

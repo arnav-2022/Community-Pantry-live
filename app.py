@@ -4,7 +4,7 @@ import sqlite3
 
 app = Flask(__name__)
 
-DATABASE = 'community_pantry'
+DATABASE = 'community_pantry.db'
 
 def get_db():
     db = sqlite3.connect(DATABASE)
