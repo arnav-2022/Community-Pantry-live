@@ -58,8 +58,27 @@
         th {
             background-color: #4f9b54;
             text-align: center;
+            color:white;
 
         }
+        .back-button {
+            background-color: red; /* Set button background color */
+            color: white; /* Set button text color */
+            padding: 10px 20px; /* Add padding to the button */
+            border: none; /* Remove button border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            font-weight: bold;
+            margin-top: 80px;
+            
+        }
+        .back-container {
+            display: flex;
+            justify-content: center; /* Horizontally center the button */
+            align-items: center; /* Vertically center the button */
+            height: 40vh; /* Set container height to full viewport height */
+        }
+
     </style>
 </head>
 <body>
@@ -89,4 +108,7 @@
         </table>
     </div>
 </body>
+<div class="back-container ">
+    <button onclick="window.location.href='/'" class="back-button">Back to Home</button>
+</div>
 </html>

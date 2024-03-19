@@ -49,4 +49,4 @@ def available_food():
     return render_template('available_food.html',food_items=food_items)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="localhost", port=8000, debug=True)

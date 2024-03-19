@@ -96,11 +96,18 @@
 
             </div>
         </div>
-        <div class="right-container">
-            <div class="image-container">
-                <img src="{{ url_for('static', filename='meal_pic1.jpg') }}" class="image" ?
+        <head>
+            <!-- Other meta tags and stylesheets -->
+            <link rel="preload" href="{{ url_for('static', filename='meal_pic1.jpg') }}" as="image">
+        </head>
+        <body>
+            <!-- Your HTML content -->
+            <div class="right-container">
+                <div class="image-container">
+                    <img src="{{ url_for('static', filename='meal_pic1.jpg') }}" class="image">
+                </div>
             </div>
-        </div>
+        </body>
     </div>
 </body>
 </html>

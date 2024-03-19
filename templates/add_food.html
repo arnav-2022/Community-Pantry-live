@@ -74,6 +74,26 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+        .back-button {
+            background-color: red; /* Set button background color */
+            color: white; /* Set button text color */
+            padding: 10px 20px; /* Add padding to the button */
+            border: none; /* Remove button border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            font-weight: bold;
+            margin-top: 80px;
+            
+        }
+        .back-container {
+            display: flex;
+            justify-content: center; /* Horizontally center the button */
+            align-items: center; /* Vertically center the button */
+            height: 40vh; /* Set container height to full viewport height */
+        }
+
+
     </style>
 </head>
 <body>
@@ -88,10 +108,15 @@
             <textarea id="description" name="description"></textarea>
             <label for="pickup_address">Pickup Address:</label>
             <textarea id="pickup_address" name="pickup_address" required></textarea>
-            <label for="contact_number">Contact Number (eg. 123-456-7890): </label>
+            <label for="contact_number">Contact Number:</label>
             <input type="tel" id="contact_number" name="contact_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <input type="submit" value="Add Food">  
         </form>
     </div>
 </body>
+        
+<div class="back-container ">
+    <button onclick="window.location.href='/'" class="back-button">Back to Home</button>
+</div>
+
 </html>
