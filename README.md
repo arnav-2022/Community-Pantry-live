@@ -1,4 +1,8 @@
-# Community Pantry
+# Devpost Hackswift 2024 Project- Community Pantry
+## [Winning Category- Honorable Mention](https://devpost.com/software/gas-price-averager)
+[![](https://i.ytimg.com/an_webp/aP_n794LXBU/mqdefault_6s.webp?du=3000&sqp=CJntmLAG&rs=AOn4CLCKDp8XuBIlGFweNsAZFYegEy4tqw)](https://youtu.be/aP_n794LXBU?si=7U6EPAfFe_xcR4d7)
+
+# Description
 Welcome to Community Pantry, where kindness knows no bounds. Whether you're sharing your abundance or seeking a helping hand, our platform is your compassionate ally. Easily add surplus food items, knowing your contribution makes a meaningful difference. And for those seeking support, explore our offerings with comfort and assurance, knowing a caring community awaits with open arms.
 
 ## Inspiration
